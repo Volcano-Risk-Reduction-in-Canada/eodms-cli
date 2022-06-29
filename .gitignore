@@ -16,6 +16,7 @@ eggs/
 .eggs/
 lib/
 lib64/
+output_geospatial/*
 parts/
 sdist/
 var/
@@ -41,3 +42,4 @@ ENV/
 env.bak/
 venv.bak/
 _wiki_changes.txt
+virtualenv/
