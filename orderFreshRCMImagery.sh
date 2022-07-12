@@ -12,7 +12,7 @@ PREVIOUS=`date +"%Y%m%d" --date='-2 day'`
 
 ###### A4201 Meager ######
 
-BEAMS=(5M3,5M2,5M8,5M10,5M15,5M21)
+BEAMS=(5M3 5M2 5M8 5M10 5M15 5M21)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -35,7 +35,7 @@ done
 
 # A4202 Garibaldi
 
-BEAMS=(3M6,3M7,3M18,3M23,3M30,3M34,3M42)
+BEAMS=(3M6 3M7 3M18 3M23 3M30 3M34 3M42)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -58,7 +58,7 @@ done
 
 # A4203 Cayley
 
-BEAMS=(3M1,3M6,3M13,3M14,3M17,3M24,3M30,3M36)
+BEAMS=(3M1 3M6 3M13 3M14 3M17 3M24 3M30 3M36)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -81,7 +81,7 @@ done
 
 # A4204 Edziza North
 
-BEAMS=(3M13,3M41)
+BEAMS=(3M13 3M41)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -104,7 +104,7 @@ done
 
 # A4205 Edziza South
 
-BEAMS=(3M12,3M31,3M42)
+BEAMS=(3M12 3M31 3M42)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -127,7 +127,7 @@ done
 
 # A4206 Tseax
 
-BEAMS=(3M7,3M9,3M19,3M40)
+BEAMS=(3M7 3M9 3M19 3M40)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -150,7 +150,7 @@ done
 
 # A4207 Nazko 
 
-BEAMS=(3M9,3M20,3M31)
+BEAMS=(3M9 3M20 3M31)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -173,7 +173,7 @@ done
 
 # A4208 Hoodoo
 
-BEAMS=(8,14,38,41,11)
+BEAMS=(3M8 3M14 3M38 3M41 3M11)
 
 for BEAM in ${BEAMS[@]};
 do
@@ -196,7 +196,7 @@ done
 
 # A4209 Lava Fork
 
-BEAMS=(3M11,3M20,3M21,3M29,3M31,3M41)
+BEAMS=(3M11 3M20 3M21 3M29 3M31 3M41)
 
 for BEAM in ${BEAMS[@]};
 do
