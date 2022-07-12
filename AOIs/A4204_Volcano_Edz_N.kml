@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4204_Volcano_Edz_N" id="A4204_Volcano_Edz_N">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4204_Volcano_Edz_N</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4204_Volcano_Edz_N">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4204_Volcano_Edz_N</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-130.711429,57.930065,0 -130.679034,57.938085,0 -130.599403,57.938592,0 -130.534441,57.910865,0 -130.516421,57.872546,0 -130.513309,57.817022,0 -130.537278,57.786684,0 -130.578003,57.776658,0 -130.625427,57.776459,0 -130.669083,57.778515,0 -130.705551,57.790286,0 -130.736131,57.814294,0 -130.744027,57.86382,0 -130.732129,57.910041,0 -130.711429,57.930065,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

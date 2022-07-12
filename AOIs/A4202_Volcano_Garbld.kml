@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4202_Volcano_Garbld" id="A4202_Volcano_Garbld">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4202_Volcano_Garbld</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4202_Volcano_Garbld">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4202_Volcano_Garbld</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-122.980339,49.972785,0 -122.942529,49.958464,0 -122.916604,49.890646,0 -122.930902,49.816891,0 -122.949384,49.804551,0 -123.019233,49.806001,0 -123.080802,49.804464,0 -123.149833,49.840065,0 -123.163691,49.868491,0 -123.166719,49.945044,0 -123.150724,49.972956,0 -123.084311,49.974943,0 -122.980339,49.972785,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

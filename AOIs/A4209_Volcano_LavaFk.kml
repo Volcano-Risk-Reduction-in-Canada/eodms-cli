@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4209_Volcano_LavaFk" id="A4209_Volcano_LavaFk">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4209_Volcano_LavaFk</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4209_Volcano_LavaFk">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4209_Volcano_LavaFk</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-130.904161,56.441557,0 -130.884353,56.443173,0 -130.836355,56.440173,0 -130.817732,56.423084,0 -130.812013,56.402777,0 -130.812449,56.385885,0 -130.829111,56.374673,0 -130.872822,56.377168,0 -130.893316,56.379506,0 -130.903186,56.408451,0 -130.911641,56.42854,0 -130.904161,56.441557,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

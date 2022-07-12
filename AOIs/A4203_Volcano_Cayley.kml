@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4203_Volcano_Cayley" id="A4203_Volcano_Cayley">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4203_Volcano_Cayley</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4203_Volcano_Cayley">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4203_Volcano_Cayley</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-123.372065,50.158965,0 -123.328807,50.174576,0 -123.291706,50.177998,0 -123.226035,50.181828,0 -123.201847,50.155396,0 -123.159242,50.054963,0 -123.187549,50.026044,0 -123.247987,50.014785,0 -123.316481,50.019274,0 -123.357604,50.052275,0 -123.380421,50.097436,0 -123.401833,50.129378,0 -123.393131,50.148254,0 -123.372065,50.158965,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

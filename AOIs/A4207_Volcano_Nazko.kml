@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4207_Volcano_Nazko" id="A4207_Volcano_Nazko">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4207_Volcano_Nazko</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4207_Volcano_Nazko">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4207_Volcano_Nazko</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-123.746897,52.930447,0 -123.742721,52.932263,0 -123.735258,52.932745,0 -123.729536,52.931578,0 -123.725608,52.92917,0 -123.725214,52.925512,0 -123.72577,52.922843,0 -123.731142,52.920609,0 -123.737506,52.919854,0 -123.742672,52.919868,0 -123.746351,52.921476,0 -123.748464,52.923879,0 -123.748932,52.927356,0 -123.748937,52.927425,0 -123.746897,52.930447,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

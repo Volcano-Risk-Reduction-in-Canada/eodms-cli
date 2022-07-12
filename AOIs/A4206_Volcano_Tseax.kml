@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4206_Volcano_Tseax" id="A4206_Volcano_Tseax">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4206_Volcano_Tseax</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4206_Volcano_Tseax">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4206_Volcano_Tseax</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-128.884657,55.121004,0 -128.876494,55.115187,0 -128.876665,55.10462,0 -128.898143,55.095131,0 -128.915537,55.091107,0 -128.944448,55.095047,0 -128.951743,55.105123,0 -128.936653,55.117273,0 -128.906094,55.120531,0 -128.884657,55.121004,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

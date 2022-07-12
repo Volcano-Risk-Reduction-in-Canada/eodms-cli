@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4201_Volcano_Meager" id="A4201_Volcano_Meager">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4201_Volcano_Meager</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4201_Volcano_Meager">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4201_Volcano_Meager</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-123.63096,50.706821,0 -123.574358,50.698956,0 -123.523022,50.700666,0 -123.470162,50.681242,0 -123.397459,50.628325,0 -123.362686,50.602655,0 -123.406123,50.567701,0 -123.423479,50.532703,0 -123.563352,50.538583,0 -123.624325,50.583684,0 -123.702543,50.620715,0 -123.669659,50.676487,0 -123.63096,50.706821,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document id="root_doc">
+<Schema name="A4208_Volcano_Hoodoo" id="A4208_Volcano_Hoodoo">
+	<SimpleField name="FID" type="float"></SimpleField>
+	<SimpleField name="lyrname" type="string"></SimpleField>
+</Schema>
+<Folder><name>A4208_Volcano_Hoodoo</name>
+  <Placemark>
+	<Style><LineStyle><color>ff0000ff</color></LineStyle><PolyStyle><fill>0</fill></PolyStyle></Style>
+	<ExtendedData><SchemaData schemaUrl="#A4208_Volcano_Hoodoo">
+		<SimpleData name="FID">0</SimpleData>
+		<SimpleData name="lyrname">A4208_Volcano_Hoodoo</SimpleData>
+	</SchemaData></ExtendedData>
+      <Polygon><outerBoundaryIs><LinearRing><coordinates>-131.316263,56.807292,0 -131.293634,56.806958,0 -131.242898,56.790351,0 -131.235631,56.763656,0 -131.252142,56.744675,0 -131.287219,56.736438,0 -131.330048,56.743357,0 -131.342156,56.747723,0 -131.353191,56.767918,0 -131.355251,56.78393,0 -131.316263,56.807292,0</coordinates></LinearRing></outerBoundaryIs></Polygon>
+  </Placemark>
+</Folder>
+</Document></kml>
