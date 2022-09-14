@@ -25,17 +25,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Meager \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Meager/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Meager \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Meager/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4202 Garibaldi
@@ -53,17 +58,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Garibaldi \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Garibaldi/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Garibaldi \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Garibaldi/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4203 Cayley
@@ -81,17 +91,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Cayley \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Cayley/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Cayley \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Cayley/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4204 Edziza North
@@ -109,17 +124,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Edziza_North \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_North/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Edziza_North \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_North/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4205 Edziza South
@@ -137,17 +157,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Edziza_South \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_South/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Edziza_South \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_South/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4206 Tseax
@@ -165,17 +190,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Tseax \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Tseax/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Tseax \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Tseax/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4207 Nazko 
@@ -193,17 +223,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Nazko \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Nazko/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Nazko \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Nazko/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4208 Hoodoo
@@ -221,17 +256,22 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Hoodoo \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Hoodoo/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Hoodoo \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Hoodoo/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
 
 # A4209 Lava Fork
@@ -249,16 +289,20 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-
-  for file in ~/eodms-cli/downloads/*zip
-  do
-    date=${file#*$BEAM}
-    date=${date:1:8}
-    python3 ~/eodms-cli/createImageSqs.py \
-      --site=Lava_Fork \
-      --beam=${BEAM} \
-      --imageDate=$date
-    aws s3 mv $file s3://vrrc-rcm-raw-data-store/Lava_Fork/${BEAM}/
-  done
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Lava_Fork \
+        --beam=${BEAM} \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Lava_Fork/${BEAM}/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
 done
-
