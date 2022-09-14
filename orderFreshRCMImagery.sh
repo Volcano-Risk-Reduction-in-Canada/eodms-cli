@@ -25,7 +25,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -54,7 +53,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -83,7 +81,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -112,7 +109,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -141,7 +137,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -170,7 +165,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -199,7 +193,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -228,7 +221,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
@@ -257,7 +249,6 @@ do
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
-  sudo chmod 777 downloads/*
 
   for file in ~/eodms-cli/downloads/*zip
   do
