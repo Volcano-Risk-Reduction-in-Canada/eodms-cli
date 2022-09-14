@@ -21,7 +21,7 @@ def main():
     refdateList.sort()
 
     # Check and make sure the reference date isn't already in the raw data bucket
-    if args.imageDate in refdateList: refdateList.remove(args.refDate)
+    if args.imageDate in refdateList: refdateList.remove(args.imageDate)
 
     # This is where the insar pairs to be generated can be customized
     # for example, we could search for a date closest to 1 year, 6 months ago, etc
