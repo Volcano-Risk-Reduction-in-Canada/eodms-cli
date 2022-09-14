@@ -11,7 +11,7 @@ def main():
     s3 = boto3.client('s3')
     # rawRCMbucket = s3.Bucket('s3://vrrc-rcm-raw-data-store/Meager/${beam}/'.format(args.beam))
     rawImages = s3.list_objects_v2(Bucket='vrrc-rcm-raw-data-store', 
-                             Prefix='{}/{}/'.format('Meager', '5M3'), 
+                             Prefix='{}/{}/'.format(args.site, args.beam), 
                              Delimiter="/")
 
     refdateList=[]
