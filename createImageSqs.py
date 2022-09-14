@@ -42,6 +42,14 @@ def main():
                 'pairDate':{
                     'DataType':'String',
                     'StringValue':'{}'.format(args.imageDate)
+                },
+                'site':{
+                    'DataType': 'String',
+                    'StringValue':'{}'.format(args.site)
+                },
+                'beam':{
+                    'DataType': 'String',
+                    'StringValue':'{}'.format(args.beam)
                 }
             }
         # Send message to SQS queue
