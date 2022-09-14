@@ -31,9 +31,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Meager
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Meager \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Meager/${BEAM}/
   done
@@ -60,9 +60,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Garibaldi
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Garibaldi \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Garibaldi/${BEAM}/
   done
@@ -89,9 +89,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Cayley
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Cayley \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Cayley/${BEAM}/
   done
@@ -118,9 +118,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Edziza_North
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Edziza_North \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_North/${BEAM}/
   done
@@ -147,9 +147,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Edziza_South
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Edziza_South \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_South/${BEAM}/
   done
@@ -176,9 +176,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Tseax
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Tseax \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Tseax/${BEAM}/
   done
@@ -205,9 +205,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Nazko
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Nazko \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Nazko/${BEAM}/
   done
@@ -234,9 +234,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Hoodoo
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Hoodoo \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Hoodoo/${BEAM}/
   done
@@ -263,9 +263,9 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 creatImageSqs.py \
-      --site=Lava_Fork
-      --beam=${BEAM}
+    python3 ~/eodms-cli/creatImageSqs.py \
+      --site=Lava_Fork \
+      --beam=${BEAM} \
       --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Lava_Fork/${BEAM}/
   done
