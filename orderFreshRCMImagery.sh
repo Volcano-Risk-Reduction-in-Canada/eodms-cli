@@ -8,7 +8,7 @@
 ################################################################
 
 CURRENT=`date +"%Y%m%d"  --date='+2 day'`
-PREVIOUS=`date +"%Y%m%d" --date='-2 day'`
+PREVIOUS=`date +"%Y%m%d" --date='-1 day'`
 
 ###### A4201 Meager ######
 
