@@ -29,6 +29,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Meager
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Meager/${BEAM}/
   done
 done
@@ -52,6 +58,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Garibaldi
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Garibaldi/${BEAM}/
   done
 done
@@ -75,6 +87,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Cayley
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Cayley/${BEAM}/
   done
 done
@@ -98,6 +116,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Edziza_North
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_North/${BEAM}/
   done
 done
@@ -121,6 +145,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Edziza_South
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Edziza_South/${BEAM}/
   done
 done
@@ -144,6 +174,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Tseax
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Tseax/${BEAM}/
   done
 done
@@ -167,6 +203,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Nazko
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Nazko/${BEAM}/
   done
 done
@@ -190,6 +232,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Hoodoo
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Hoodoo/${BEAM}/
   done
 done
@@ -213,6 +261,12 @@ do
 
   for file in ~/eodms-cli/downloads/*zip
   do
+    date=${file#*$BEAM}
+    date=${date:1:8}
+    python3 creatImageSqs.py \
+      --site=Lava_Fork
+      --beam=${BEAM}
+      --imageDate=$date
     aws s3 mv $file s3://vrrc-rcm-raw-data-store/Lava_Fork/${BEAM}/
   done
 done
