@@ -31,7 +31,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Meager \
       --beam=${BEAM} \
       --imageDate=$date
@@ -60,7 +60,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Garibaldi \
       --beam=${BEAM} \
       --imageDate=$date
@@ -89,7 +89,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Cayley \
       --beam=${BEAM} \
       --imageDate=$date
@@ -118,7 +118,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Edziza_North \
       --beam=${BEAM} \
       --imageDate=$date
@@ -147,7 +147,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Edziza_South \
       --beam=${BEAM} \
       --imageDate=$date
@@ -176,7 +176,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Tseax \
       --beam=${BEAM} \
       --imageDate=$date
@@ -205,7 +205,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Nazko \
       --beam=${BEAM} \
       --imageDate=$date
@@ -234,7 +234,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Hoodoo \
       --beam=${BEAM} \
       --imageDate=$date
@@ -263,7 +263,7 @@ do
   do
     date=${file#*$BEAM}
     date=${date:1:8}
-    python3 ~/eodms-cli/creatImageSqs.py \
+    python3 ~/eodms-cli/createImageSqs.py \
       --site=Lava_Fork \
       --beam=${BEAM} \
       --imageDate=$date
