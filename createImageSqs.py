@@ -16,7 +16,9 @@ def main():
 
     refdateList=[]
     for date in rawImages['Contents']:
-        refdateList.append(date['Key'].split('_')[5])
+        basename = date['Key'].split('/')[-1] # basename = 'RCM1_OK2042971_PK2171297_1_3M31_20220719_145359_HH_SLC.zip'
+        refdate = basename.split('_')[5] # refdate = '20220719'
+        refdateList.append(refdate)
 
     refdateList.sort()
 
