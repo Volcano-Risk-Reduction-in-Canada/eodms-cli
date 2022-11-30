@@ -21,7 +21,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4201_Volcano_Meager.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -54,7 +54,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4202_Volcano_Garbld.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -87,7 +87,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4203_Volcano_Cayley.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -120,7 +120,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4204_Volcano_Edz_N.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -153,7 +153,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4205_Volcano_Edz_S.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -186,7 +186,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4206_Volcano_Tseax.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -219,7 +219,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4207_Volcano_Nazko.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -252,7 +252,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4208_Volcano_Hoodoo.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
@@ -285,7 +285,7 @@ do
       -d ${PREVIOUS}-${CURRENT} \
       -i ~/eodms-cli/AOIs/A4209_Volcano_LavaFk.kml \
       -prc full \
-      -ov 50 \
+      -ov 10 \
       -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
       -pri high -s
 
