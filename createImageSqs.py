@@ -2,33 +2,33 @@ import boto3
 import argparse
 
 
-
 def main():
 
     args = parse_args()
 
     # List existing imagery in s3 bucket and parse pair dates
     s3 = boto3.client('s3')
-    # rawRCMbucket = s3.Bucket('s3://vrrc-rcm-raw-data-store/Meager/${beam}/'.format(args.beam))
-    rawImages = s3.list_objects_v2(Bucket='vrrc-rcm-raw-data-store', 
-                             Prefix='{}/{}/'.format(args.site, args.beam), 
-                             Delimiter="/")
+    rawImages = s3.list_objects_v2(Bucket='vrrc-rcm-raw-data-store',
+                                   Prefix='{}/{}/'.format(args.site,
+                                                          args.beam),
+                                   Delimiter="/")
 
-    refdateList=[]
+    refdateList = []
     for date in rawImages['Contents']:
-        basename = date['Key'].split('/')[-1] # basename = 'RCM1_OK2042971_PK2171297_1_3M31_20220719_145359_HH_SLC.zip'
-        refdate = basename.split('_')[5] # refdate = '20220719'
+        basename = date['Key'].split('/')[-1]
+        refdate = basename.split('_')[5]
         refdateList.append(refdate)
 
     refdateList.sort()
 
-    # Check and make sure the reference date isn't already in the raw data bucket
-    if args.imageDate in refdateList: refdateList.remove(args.imageDate)
+    # Check that the reference date isn't already in the raw data bucket
+    if args.imageDate in refdateList:
+        refdateList.remove(args.imageDate)
 
     # This is where the insar pairs to be generated can be customized
-    # for example, we could search for a date closest to 1 year, 6 months ago, etc
-    # for simplicity we'll just create pairs with the 5 most recent images for now
-    refdateList=refdateList[-5:]
+    # we could search for a date closest to 1 year, 6 months ago, etc
+    # for simplicity we create pairs with the 5 most recent images for now
+    refdateList = refdateList[-5:]
 
     # Create SQS client
     sqs = boto3.client('sqs', region_name='ca-central-1')
@@ -36,22 +36,22 @@ def main():
     queue_url = 'https://sqs.ca-central-1.amazonaws.com/069989789993/vrrc-insar-q'
 
     for refDate in refdateList:
-        messageAttributes={
-                'referenceDate':{
-                    'DataType':'String',
-                    'StringValue':'{}'.format(refDate)
-                },
-                'pairDate':{
-                    'DataType':'String',
-                    'StringValue':'{}'.format(args.imageDate)
-                },
-                'site':{
+        messageAttributes = {
+                'referenceDate': {
                     'DataType': 'String',
-                    'StringValue':'{}'.format(args.site)
+                    'StringValue': '{}'.format(refDate)
                 },
-                'beam':{
+                'pairDate': {
                     'DataType': 'String',
-                    'StringValue':'{}'.format(args.beam)
+                    'StringValue': '{}'.format(args.imageDate)
+                },
+                'site': {
+                    'DataType': 'String',
+                    'StringValue': '{}'.format(args.site)
+                },
+                'beam': {
+                    'DataType': 'String',
+                    'StringValue': '{}'.format(args.beam)
                 }
             }
         # Send message to SQS queue
@@ -66,16 +66,28 @@ def main():
         )
 
     # print(response['MessageId'])
-    return
+    return response
+
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="Average Coherence across cc image and output to list")
-    parser.add_argument("--site", type=str, help='Volcanic Site Name', required=True)
-    parser.add_argument("--beam", type=str, help="RCM Beam Mode", required=True)
-    parser.add_argument("--imageDate", type=str, help="RCM New Image Date", required=True)
+    parser = argparse.ArgumentParser(description=("Average Coherence across cc"
+                                                  "image and output to list"))
+    parser.add_argument("--site",
+                        type=str,
+                        help='Volcanic Site Name',
+                        required=True)
+    parser.add_argument("--beam",
+                        type=str,
+                        help="RCM Beam Mode",
+                        required=True)
+    parser.add_argument("--imageDate",
+                        type=str,
+                        help="RCM New Image Date",
+                        required=True)
     args = parser.parse_args()
 
     return args
+
 
 if __name__ == '__main__':
     main()
