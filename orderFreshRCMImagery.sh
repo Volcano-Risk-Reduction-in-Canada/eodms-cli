@@ -306,3 +306,36 @@ do
     echo "No Images Downloaded"
   fi
 done
+
+# Edgecumbe
+
+BEAMS=(3M36)
+
+for BEAM in ${BEAMS[@]};
+do
+  python3 ~/eodms-cli/eodms_cli.py \
+      -c RCMImageProducts \
+      -d ${PREVIOUS}-${CURRENT} \
+      -i ~/eodms-cli/AOIs/Volcano_Edgecumbe.kml
+      -prc full \
+      -ov 10 \
+      -f "RCMImageProducts.BEAM_MNEMONIC="${BEAM} \
+      -pri high -s
+
+  if ls ~/eodms-cli/downloads/*.zip &>/dev/null 
+  then
+    echo "RCM Images Downloaded"
+    for file in ~/eodms-cli/downloads/*zip
+    do
+      date=${file#*$BEAM}
+      date=${date:1:8}
+      python3 ~/eodms-cli/createImageSqs.py \
+        --site=Edgecumbe \
+        --beam=${BEAM}D \
+        --imageDate=$date
+      aws s3 mv $file s3://vrrc-rcm-raw-data-store/Lava_Fork/${BEAM}D/
+    done
+  else
+    echo "No Images Downloaded"
+  fi
+done
