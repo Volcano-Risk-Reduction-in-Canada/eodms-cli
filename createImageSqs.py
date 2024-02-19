@@ -70,8 +70,8 @@ def main():
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description=("Average Coherence across cc"
-                                                  "image and output to list"))
+    parser = argparse.ArgumentParser(description=("Create new InSAR processing"
+                                                  "job"))
     parser.add_argument("--site",
                         type=str,
                         help='Volcanic Site Name',
