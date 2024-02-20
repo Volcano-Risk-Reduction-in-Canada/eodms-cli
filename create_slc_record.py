@@ -3,7 +3,6 @@ import argparse
 import os
 import requests
 import zipfile
-import pprint
 
 from lxml import etree as ET
 
@@ -50,7 +49,6 @@ def main():
 def get_slc_corners(root, tree, namespace):
     lines = "{:.7e}".format(int(root.find('.//ns:numLines', namespace).text)-1)
     samplesPerLine = "{:.7e}".format(int(root.find('.//ns:samplesPerLine', namespace).text)-1)
-
     # find 4 corner coordinates, so lat/long at [0,0], [0,samplesPerLine], [lines,0], [lines,samplesPerLine]
     top_left = tree.xpath(".//ns:imageReferenceAttributes/"
                           "ns:geographicInformation/"
@@ -124,6 +122,7 @@ def parse_args():
                         help="RCM Zipfile Name",
                         required=True)
     args = parser.parse_args()
+    # args = parser.parse_args(['--site', 'Fagradalsfjall', '--beam', '5M9', '--image_file_name', '/home/ec2-user/eodms-cli/downloads/RCM3_OK2894345_PK2947746_1_5M9_20240219_185609_HH_SLC.zip'])
 
     return args
 
