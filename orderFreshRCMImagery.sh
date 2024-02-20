@@ -31,6 +31,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Meager \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Meager \
         --beam=${BEAM} \
@@ -63,6 +67,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Garibaldi \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Garibaldi \
         --beam=${BEAM} \
@@ -95,6 +103,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Cayley \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Cayley \
         --beam=${BEAM} \
@@ -127,6 +139,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Edziza_North \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Edziza_North \
         --beam=${BEAM} \
@@ -159,6 +175,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Edziza_South \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Edziza_South \
         --beam=${BEAM} \
@@ -191,6 +211,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Tseax \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Tseax \
         --beam=${BEAM} \
@@ -223,6 +247,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Nazko \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Nazko \
         --beam=${BEAM} \
@@ -255,6 +283,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Hoodoo \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Hoodoo \
         --beam=${BEAM} \
@@ -287,6 +319,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Lava_fork \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Lava_Fork \
         --beam=${BEAM} \
@@ -319,6 +355,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Edgecumbe \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Edgecumbe \
         --beam=${BEAM}D \
@@ -351,6 +391,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Campi_Flegrei \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Campi_Flegrei \
         --beam=${BEAM} \
@@ -383,6 +427,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Vesuvius \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Vesuvius \
         --beam=${BEAM} \
@@ -416,10 +464,9 @@ do
       date=${file#*$BEAM}
       date=${date:1:8}
       python3 ~/eodms-cli/create_slc_record.py \
-          --site=Fagradalsfjall \
-          --beam=$BEAM \
-          --image_file_name=$file
-
+        --site=Fagradalsfjall \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Fagradalsfjall \
         --beam=${BEAM} \
@@ -452,6 +499,10 @@ do
     do
       date=${file#*$BEAM}
       date=${date:1:8}
+      python3 ~/eodms-cli/create_slc_record.py \
+        --site=Thompson_River_Valley \
+        --beam=$BEAM \
+        --image_file_name=$file
       python3 ~/eodms-cli/createImageSqs.py \
         --site=Thompson_River_Valley \
         --beam=${BEAM} \
